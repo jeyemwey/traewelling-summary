@@ -2,5 +2,10 @@
 (async () => {
     const journeys = await require("./csvParser").journeys
 
-    console.table(journeys)
+    // Require all files in parts and run the exports.default. Then, add a newline.
+    const parts = ["sums"]
+    parts.forEach(part => {
+        require("./parts/" + part)(journeys)
+        console.log()
+    })
 })()

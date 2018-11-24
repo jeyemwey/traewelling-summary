@@ -10,9 +10,10 @@ const parseLines = (lines) => Promise.all(lines.map(line => {
     return {
         statusID: StatusID, zugart: Zugart, zugnummer: Zugnummer,
         abfahrtsort: Abfahrtsort, abfahrtskoordinaten: Abfahrtskoordinaten,
-        abfahrtszeit: Abfahrtszeit, ankunftsort: Ankunftsort,
-        ankunftskoordinaten: Ankunftskoordinaten, ankunftszeit: Ankunftszeit,
-        reisezeit: Reisezeit, kilometer: Kilometer, punkte: Punkte,
+        abfahrtszeit: new Date(Abfahrtszeit), ankunftsort: Ankunftsort,
+        ankunftskoordinaten: Ankunftskoordinaten,
+        ankunftszeit: new Date(Ankunftszeit), reisezeit: Reisezeit,
+        kilometer: parseFloat(Kilometer), punkte: parseInt(Punkte),
         status: Status, zwischenhalte: Zwischenhalte,
     }
 }))
