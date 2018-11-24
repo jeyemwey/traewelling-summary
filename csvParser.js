@@ -13,7 +13,7 @@ const parseLines = (lines) => Promise.all(lines.map(line => {
         abfahrtszeit: new Date(Abfahrtszeit), ankunftsort: Ankunftsort,
         ankunftskoordinaten: Ankunftskoordinaten,
         ankunftszeit: new Date(Ankunftszeit), reisezeit: Reisezeit,
-        kilometer: parseFloat(Kilometer), punkte: parseInt(Punkte),
+        kilometer: parseFloat(Kilometer) || 0, punkte: parseInt(Punkte) || 0,
         status: Status, zwischenhalte: Zwischenhalte,
     }
 }))
