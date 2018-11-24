@@ -1,0 +1,26 @@
+{
+  "name": "traewelling-summary",
+  "version": "0.1.0",
+  "description": "Script to give you an overview of your [traewelling.de](https://traewelling.de/) journeys.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeyemwey/traewelling-summary.git"
+  },
+  "keywords": [
+    "data-viz",
+    "transport",
+    "data",
+    "traewelling",
+    "twitter"
+  ],
+  "author": "Jannik <jannik@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeyemwey/traewelling-summary/issues"
+  },
+  "homepage": "https://github.com/jeyemwey/traewelling-summary#readme"
+}
