@@ -3,7 +3,7 @@
     const journeys = await require("./csvParser").journeys
 
     // Require all files in parts and run the exports.default. Then, add a newline.
-    const parts = ["sums", "longestJourney"]
+    const parts = ["sums", "longestJourney", "mostVisitedStations"]
     parts.forEach(part => {
         require("./parts/" + part)(journeys)
         console.log()
