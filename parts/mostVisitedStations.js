@@ -10,8 +10,6 @@ module.exports = (journeys) => {
         if (typeof stations[journey.ankunftsort] == "undefined")
             stations[journey.ankunftsort] = {stationName: journey.ankunftsort, visits: 0}
         stations[journey.ankunftsort].visits += 1
-
-        return stations
     })
     // Nimm die Werte aus dem Stationsobjekt, sortiere nach visits (ASC) and reverse it. 
     stations = Object.values(stations).sort((a, b) => a.visits - b.visits).reverse()
